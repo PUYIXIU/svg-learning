@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: #000000;
+      display: flex;
+      height:100vh;
+      overflow-y: hidden;
+      justify-content: center;
+      align-items: center;
+    }
+    #body{
+      animation: bodyMove 1s ease-in-out infinite;
+      cursor: pointer;
+    }
+    #eye{
+      animation: eyeMove 3s ease-in-out infinite;
+      transform-origin: center;
+    }
+    #ear{
+      transform-origin: center;
+      animation: earMove 3s ease-in-out infinite;
+    }
+    #hear{
+      transform-origin: center;
+      animation: earMove 2s ease-in-out infinite;
+    }
+    #mouse{
+      transform-origin: center;
+      animation: mouseMove 3s ease-in-out infinite;
+    }
+    #text.hidden{
+      opacity: 0;
+      /* animation: popup 0.3s ease-in-out reverse ; */
+    }
+    #text.show{
+      opacity: 1;
+      animation: popup 0.3s ease-in-out ;
+    }
+    @keyframes popup{
+      0%{transform: translateY(-50px);opacity: 0;}
+      100%{transform: translateY(0%);opacity: 1;}
+    }
+    @keyframes bodyMove{
+      0%{ transform: translateY(0px); }
+      50%{ transform: translateY(-10px); }
+      100%{ transform: translateY(0px); }
+    }
+    @keyframes mouseMove{
+      0%{ transform:translateY(0) rotateZ(0deg); }
+      20%{ transform:translateY(-10px) rotateZ(5deg); }
+      30%{ transform:translateY(0px) rotateZ(2deg); }
+      50%{ transform:translateY(-10px) rotateZ(0deg); }
+      70%{ transform:translateY(0px) rotateZ(-2deg); }
+      80%{ transform:translateY(-10px) rotateZ(-5deg); }
+      100%{ transform:translateY(0px) rotateZ(0deg); }
+    }
+    @keyframes earMove{
+      0%{ transform:translateY(0) rotateZ(0deg); }
+      25%{ transform:translateY(-5px) rotateZ(5deg); }
+      75%{ transform:translateY(-10px) rotateZ(-3deg); }
+      100%{ transform:translateY(0px) rotateZ(0deg); }
+    }
+    @keyframes eyeMove{
+      0%{ transform: translateX(0px) translateY(0px); }
+      25%{ transform: translateX(-10px) translateY(-5px) ;}
+      49%{ transform: translateX(0px) translateY(-10px) rotateX(0deg); }
+      50%{ transform: translateX(0px) translateY(-10px) rotateX(90deg); }
+      51%{ transform: translateX(0px) translateY(-10px) rotateX(0deg); }
+      75%{ transform: translateX(10px) translateY(-5px); }
+      100%{ transform: translateX(0px) translateY(0px); }
+    }
+  </style>
+</head>
+<body>
+  <svg width="900" height="600">
+    <g id="text" class="hidden">
+      <polygon points="350,15 550,15 550,65 510,65 490,85 470,65 350,65" stroke="#ffd500" stroke-width="5" />
+      <text x="450" y="50"  fill="#ffd500" text-anchor="middle" font-family="fantasy" font-size="30">Hello!</text>
+    </g>
+    <g id="body">
+      <!-- 整个身体 -->
+      <ellipse id="head" cx="450" cy="400" rx="250" ry="150" rx="20%" ry="30%" stroke-width="5" stroke="#80FFDB"/>
+      <!-- 眼睛 -->
+      <g id="eye">
+        <rect x="350" y="340" rx="10%" ry="2%" width="20" height="50" fill="#80FFDB"/>
+        <rect x="530" y="340" rx="10%" ry="2%" width="20" height="50" fill="#80FFDB"/>  
+      </g>
+      <!-- 耳朵 -->
+      <g id="ear">
+        <polygon points="250,280 370,230 170,100" stroke="#80FFDB" stroke-width="5"/>
+        <polygon points="650,280 530,230 730,100" stroke="#80FFDB" stroke-width="5"/>       
+      </g>
+      <!-- 呆毛 -->
+      <polyline id="hear" points="440,230 470,190 420,190 450,140" stroke="#80FFDB" stroke-width="5"/>
+      <!-- 嘴巴 -->
+      <g id="mouse">
+        <path d="M 390 430 C 390 440, 410 460 450 440" fill="" stroke="#80FFDB" stroke-width="5" />
+        <path d="M 510 430 C 510 440, 490 460 449 440" fill="" stroke="#80FFDB" stroke-width="5" />   
+      </g>
+    </g>
+    </svg>
+    <script>
+      const body = document.getElementById('body')
+      body.onclick = (e)=>{
+        const text = document.getElementById('text')
+        text.classList.remove('hidden')
+        text.classList.add('show')
+        setTimeout(()=>{
+          text.classList.remove('show')
+          text.classList.add('hidden')
+        },1000)
+      }
+    </script>
+</body>
+</html>

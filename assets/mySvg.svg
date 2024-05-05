@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_图层_2" data-name="图层 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 515 492">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_未命名的渐变_15);
+        filter: url(#outer-glow-1);
+        opacity: .82;
+      }
+
+      .cls-2 {
+        fill: url(#_未命名的渐变_15-2);
+        filter: url(#outer-glow-2);
+      }
+
+      .cls-3 {
+        fill: url(#_未命名的渐变_71);
+        filter: url(#outer-glow-3);
+      }
+    </style>
+    <linearGradient id="_未命名的渐变_15" data-name="未命名的渐变 15" x1="30" y1="246.5" x2="334.18" y2="246.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0" stop-color="#3f008b" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#002130"/>
+    </linearGradient>
+    <filter id="outer-glow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="10"/>
+      <feFlood flood-color="#000" flood-opacity=".51"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="_未命名的渐变_15-2" data-name="未命名的渐变 15" x1="155.81" y1="243.32" x2="411.42" y2="243.32" xlink:href="#_未命名的渐变_15"/>
+    <filter id="outer-glow-2" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-2" stdDeviation="10"/>
+      <feFlood flood-color="#000" flood-opacity=".51"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="_未命名的渐变_71" data-name="未命名的渐变 71" x1="278" y1="245.56" x2="484.45" y2="245.56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0" stop-color="#fcffdb" stop-opacity=".7"/>
+      <stop offset=".33" stop-color="#9aa39d" stop-opacity=".82"/>
+      <stop offset=".65" stop-color="#465469" stop-opacity=".92"/>
+      <stop offset=".88" stop-color="#132449" stop-opacity=".98"/>
+      <stop offset="1" stop-color="#00123d"/>
+    </linearGradient>
+    <filter id="outer-glow-3" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-3" stdDeviation="10"/>
+      <feFlood flood-color="#000" flood-opacity=".51"/>
+      <feComposite in2="blur-3" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="_图层_1-2" data-name="图层 1">
+    <path class="cls-1" d="m258.82,461.6c-4.4.27-8.85.4-13.32.4-116.49,0-211.39-92.43-215.37-207.95-.09-2.51-.13-5.02-.13-7.55,0-1.87.02-3.74.07-5.6,2.97-116.43,98.31-207.65,215.43-209.9,104.5-2,126.13,423.72,13.32,430.6Z"/>
+    <path class="cls-2" d="m203.24,100.54l196.47,137.39c16.93,11.84,15.2,37.44-3.18,46.88l-200.74,103.22c-18.45,9.49-40.35-4.14-39.98-24.89l4.27-240.61c.39-21.97,25.15-34.59,43.15-22Z"/>
+    <path class="cls-3" d="m278,31c10.09,10.56,23.56,26.77,35,49,10.88,21.14,14.74,41.18,23,81,3.95,19.04,7.89,38.34,10.54,64.83,1.58,15.8,3.54,36.14,2.46,63.17-.61,15.27-1.71,39.56-9,69-2.67,10.77-5.86,20.97-10.17,34.78-5.36,17.18-8.05,25.77-10.83,31.22-4.72,9.23-14.59,23.53-37,36,15.84.58,42.63-.44,73-12,6.6-2.51,37.18-14.58,67-44,7.73-7.63,30.24-31.07,46-69,4.54-10.93,13.86-35.89,16-68,4.99-74.78-32.75-130.65-40-141-57.54-82.19-151.25-93.47-166-95Z"/>
+  </g>
+</svg>

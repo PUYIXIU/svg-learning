@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <svg width="500" height="300">
+    <rect x="0" y="0" width="500" height="300"/>
+    <circle cx="250" cy="150" r="100" fill="#fa0" />
+    <text x="250"  y="170" 
+         font-size="60" text-anchor="middle"
+         style="font-weight:bold">Hub</text>
+  </svg>
+  
+  <!-- 
+    坐标映射，实现变换
+    preserveAspectRatio 视口拉伸/锁定缩放比例控制
+   -->
+
+  <svg width="500" height="300" viewBox="0 0 400 100" preserveAspectRatio="xMidYMid meet">
+    <rect x="0" y="0" width="500" height="300"/>
+    <circle cx="250" cy="150" r="100" fill="#fa0" />
+    <text x="250"  y="170" 
+         font-size="60" text-anchor="middle"
+         style="font-weight:bold">Hub</text>
+  </svg>
+
+  <svg width="500" height="300" viewBox="0 0 1000 600" preserveAspectRatio="xMaxYMax">
+    <rect x="0" y="0" width="500" height="300"/>
+    <circle cx="250" cy="150" r="100" fill="#fa0" />
+    <text x="250"  y="170" 
+         font-size="60" text-anchor="middle"
+         style="font-weight:bold">Hub</text>
+  </svg>
+
+  <svg width="500" height="300" viewBox="0 0 250 150">
+    <rect x="0" y="0" width="500" height="300"/>
+    <circle cx="250" cy="150" r="100" fill="#fa0" />
+    <text x="250"  y="170" 
+         font-size="60" text-anchor="middle"
+         style="font-weight:bold">Hub</text>
+  </svg>
+</body>
+</html>
